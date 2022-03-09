@@ -22,52 +22,23 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Prova NestJS
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Usando o framework Nest (https://nestjs.com/)
 
-## Installation
+- Implementar autenticação para acessar endpoints (sem tabela de usuario e senha, apenas usuario simples no codigo. usuario: admin senha: 1234)
+- Criar tabela simples de newsletter (id, nome, email)
+- Criar endpoint para obtenção da lista de registros dessa tabela
+	- Esse endpoint deverá exigir autenticação para ser acessado
+- configurar Swagger
+- Subir repositório no github
 
-```bash
-$ npm install
-```
+## URL
+https://prova-nest.herokuapp.com/api
+{
+  username: 'admin'
+  password: '1234'
+}
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+## GITHUB
+https://github.com/palavras-digital/prova-nest
