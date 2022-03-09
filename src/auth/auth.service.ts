@@ -24,11 +24,12 @@ export class AuthService {
   async validateUser(authLoginDto: AuthLoginDto): Promise<Auth> {
     const { username, password } = authLoginDto;
 
-    if (!username || !password) {
+    const auth = await this.validateUsername(username);
+
+    if (!auth) {
       throw new UnauthorizedException();
     }
 
-    const auth = await this.validateUsername(username);
     if (!(await this.validatePassword(password, auth.password))) {
       throw new UnauthorizedException();
     }
